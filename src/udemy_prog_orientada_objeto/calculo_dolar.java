@@ -11,7 +11,6 @@ public class calculo_dolar {
 		
 		Locale.setDefault(Locale.US);
 
-
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Qual o valor do dolar?");
 		double valorDolar = sc.nextDouble();
