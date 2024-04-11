@@ -3,34 +3,35 @@ package vetores;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Negativos {
+public class numeros_pares {
 
 	public static void main(String[] args) {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Quantos números você vai digitar?");
+		System.out.print("Quantos números você vai digitar? ");
 		int n = sc.nextInt();
 		
-		int [] vetor = new int[n];
+		int[] vetor = new int[n]; 
 		
-		for (int i=0; i<n; i++) {
+		for(int i=0; i<n; i++) {
 			System.out.print("Digite um número: ");
 			vetor[i] = sc.nextInt();
-			
 		}
-
-		System.out.println("NUMEROS NEGATIVOS");
 		
-		for (int i=0; i<n; i++)
-			if (vetor[i] < 0 ) {
-				System.out.println(vetor[i]);
-		} 
+		System.out.println("NÚMEROS PARES: ");
+		
+		for(int i=0; i<n; i++) {
+			if (vetor[i] % 2 == 0) {
+				System.out.print(vetor[i]+ " ");
+			}
+		}
+		
+		
 		
 		
 		sc.close();
-		
 	}
 
 }
